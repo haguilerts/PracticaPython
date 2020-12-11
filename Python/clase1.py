@@ -28,7 +28,16 @@ while y with
 nombre="Giovanny"   #input("Ingrese su NOMBRE: ")
 apellido='Aguilar'  #input("Ingrese su APELLIDO: ")
 edad=25             #input("Ingrese su EDAD: ")
+saludo="saludo mucho gusto!!. soy {nombre}"
 print("Nombre: '{}'. Apellido: '{}'. Edad:  '{}'\n".format(nombre,apellido,edad))
+print(saludo.f(nombre))
+#int:   %d
+#str:   %c, %s
+#float: %f
+#ihex:  %x
+#octa:  %o
+print("me llamo %s y tengo %d"%(nombre,edad))
+
 print( "mi nombre es '{0}' - '{1}' y tengo '{2}'".format(nombre,apellido,edad) )
 print( "my name is '{name}'  '{surname}' and '{age}'. ".format(name=nombre,surname=apellido,age=edad) )
 print("{g},{g},{g}".format(g=nombre))
@@ -126,7 +135,9 @@ print("Elimina: ",lista)        #[20, 30, 100]
 myLista=[[1,2,3], [4,5,6], [7,8,9]]
 print(myLista[0][0])
 
-#Estructura de datos tipo Tupla
+#Estructura de datos tipo Tupla: son como constantes
+t1=(10,20,30)
+x,y,z=t1
 tupla=(1, 2, 3)
 fecha=(25, "Diciembre", 2016)
 punto=(10, 2)
@@ -391,3 +402,11 @@ borrar_cliente(clientes, '22222222B') #{'Nombre': 'Juan', 'Apellidos': 'Gonzále
 print("\n==LISTADO DE CLIENTES==")
 print(clientes) #[{'Nombre': 'Hector', 'Apellidos': 'Costa Guzman', 'dni': '11111111A'}]
 
+
+
+
+print("concatena mi "+" + String")      
+print("len 'String':",len("hola"))          # 4 
+print("len 'lista':",len([1,2,3]))          # 3    
+print("len 'diccionario':",len({1,2,3,4,5}))# 5
+print("len 'tupla':",len( (9,8,7,6,5) ))    # 5

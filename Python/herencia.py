@@ -30,3 +30,20 @@ print(pedro.calcularSueldo(100,3000))
 
 lucas=Tripulantes("lucas",60,120210,40.000)
 lucas.mostrarRenovacionLicencia()
+x = lambda a : a + 10
+print(x(5))
+x = lambda a, b : a * b
+print(x(5, 6))
+fruits = ["apple", "banana", "cherry"]
+#fruits.insert(1,"lemon")
+print(fruits)
+print(fruits[-1])
+frutas = ["manzana", "plátano", "cereza", "naranja", "kiwi", "melón", "mango"]
+print(frutas[2:5])
+print(frutas[2:4])
+print(frutas[3:5])
+
+#print(size(frutas))
+print(len(frutas))
+#print(long(frutas))
+# https://www.youtube.com/watch?v=iliKayKaGtc 56:36
