@@ -1,0 +1,14 @@
+html {
+    font-size: 62.5%;
+    /*1 rem = 10 px*/
+}
+
+.container {
+    background-color: red;
+    font-size: 2rem;
+    /*20px*/
+    color: black;
+    border: 0.3rem solid black;
+    height: 5rem;
+    width: 33%;
+}

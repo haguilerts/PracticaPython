@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "blackjack";
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/blackjack.otf');
+}
+
+h1 {
+    font-family: "blackjack";
+    background-color: yellow;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+    line-height: 100px;
+    letter-spacing: 10px;
+}
