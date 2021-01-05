@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="">
+        h2{
+            font-size: 2em;
+            border: 1em solid red; 
+            background: blue;
+            color: cyan;
+        }
+        li{
+            color:blue;
+        }
+    </style>
+    <title>myPlantilla</title>
+</head>
+<body>
+    {% include 'superior/barraSup.html' %} 
+
+    <ul> 
+        {% if temas_curso %} 
+            {% for tema in temas_curso %} 
+                <li>{{tema|lower}}</li> 
+            {% endfor %} 
+        {% else %} 
+            <p>No hay temas que mostrar</p> 
+        {% endif %} 
+    </ul>
+
+</body>
+</html>

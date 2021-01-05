@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% include 'superior/barra.html' %} 
+    <ul> 
+        {% if temas_curso %} 
+        {% for tema in temas_curso %} 
+        <li>{{tema|first|lower}}</li> 
+        {% endfor %} 
+        {% else %} 
+        <p>No hay temas que mostrar</p> 
+        {% endif %} 
+    </ul>
+</body>
+</html>

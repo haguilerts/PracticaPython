@@ -1,0 +1,18 @@
+<html> 
+    <head> 
+        <title>{% block title %} {% endblock %} </title> 
+    </head> 
+    <body>
+        {% include 'superior/barraSup.html' %} 
+        {% block content %} {% endblock %}
+        <hr>
+        <footer>Footer</footer>
+    </body> 
+</html>
+{% comment %} 
+    Aplicamos la herencia multiple donde:
+    padre: padre.html
+    hijos: hijo.html
+    donde el titulo(block title) y contenido(block content) lo sobre escribo en el hijo 
+    
+{% endcomment %}

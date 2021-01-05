@@ -1,0 +1,11 @@
+<html> 
+    <head> 
+        <title>{% block title %} {% endblock %} </title> 
+    </head> 
+    <body>
+        {% include 'superior/barra.html' %} 
+        {% block content %} {% endblock %}
+        <hr>
+        <footer>Footer</footer>
+    </body> 
+</html>

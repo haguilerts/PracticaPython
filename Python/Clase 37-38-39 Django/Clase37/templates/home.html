@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> hola mundo!! Bienvenido..</h1>
+    <p>Nombre: {{nombre_persona}} {{apellido_persona}} </p> 
+    <p>Fecha actual: {{now.day}}/{{now.month}}/{{now.year}} </p>
+
+    {% if nombre_persona == "Juan" %} 
+        <p> Te llamas Juan</p> 
+    {% else %}        
+        <p> No te llamas Juan, vos sos: {{nombre_persona}} </p>    
+    {% endif %} 
+
+{# Comentario de una línea} 
+{% comment %} 
+    Comentario de varias líneas 
+{% endcomment %}
+
+    <ul>
+        {% if temas_curso %}
+            {% for tema in temas_curso %} 
+                <li>{{tema|first|lower}} - {{tema}} </li> 
+            {% endfor %}
+        {% else %}
+            <p>No hay temas que mostrar</p> 
+        {% endif %} 
+    </ul>
+
+</body>
+</html>
